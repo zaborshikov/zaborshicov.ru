@@ -31,6 +31,13 @@ a {
   animation-duration: 1.75s;
   color: blue;
 }
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+}
+
 a:hover {
     animation-name: ablinking;
     animation-duration: 1.75s;
