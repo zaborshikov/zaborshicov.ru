@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes ablinking {
+    from {
+        color: rgba(0,0,255,1);
+    }
+    50% {
+        color: rgba(255,0,0,1);
+    }
+    to {
+        color: rgba(0,0,255,1);
+    }
+}
+
+@keyframes bblinking {
+    from {
+        background: rgba(245, 245, 255, 1);
+    }
+    50% {
+        background: rgba(255, 240, 240, 1);
+    }
+    to {
+        background: rgba(245, 245, 255, 1);
+    }
+}
+
+a {
+  animation-duration: 1.75s;
+  color: blue;
+}
+a:hover {
+    animation-name: ablinking;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+}
+
+.container {
+  background-color: rgba(245, 245, 255, 1);
+  font-size: 120%;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 3px;
+  display: inline-block;
+  transition: 1.75s;
+}
+
+.container:hover {
+  animation-name: bblinking;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+}
